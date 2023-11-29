@@ -8,7 +8,7 @@ app.set('view engine', 'handlebars');
 
 
 app.get("/", (req, res) => {
-    res.send("Olá mundo");
+    res.render('home');
 });
 
 app.listen(3000, ()=>{
