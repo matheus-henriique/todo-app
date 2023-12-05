@@ -139,7 +139,7 @@ main {
     color: var(--todo-complite-color);
 }
 
-.tarefa form{
+.tarefa #form{
     display: flex;
     justify-content: space-between;
 }
