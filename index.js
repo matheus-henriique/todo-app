@@ -51,9 +51,13 @@ app.get("/", (requisicao, resposta) => {
             };
         });
 
-      
+        const tarefasAtivas = tarefas.filter((tarefa) =>{
+            return tarefa.completa === false && tarefa;
+        });
 
-        resposta.render('home');
+        
+
+        resposta.render('home', { tarefas });
     });
 });
 
